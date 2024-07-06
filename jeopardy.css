@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #444aeb;
+    color: white;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #c1edf3;
+    font-size: 5em;
+  }
+  
+  table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #000066;
+  }
+  
+  th, td {
+    border: 3px solid #ffcc00;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ffcc00;
+  }
+  
+  th {
+    background-color: #0303a8;
+    text-transform: uppercase;
+  }
+  
+  td {
+    background-color: #030ace;
+    vertical-align: middle;
+  }
+  
+  td:hover {
+    background-color: #000061;
+  }
+  
+  #start {
+    background-color: #00d0f5;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #start:hover {
+    background-color: #00d0f5;
+  }
+  
+  #loading-spinner {
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
